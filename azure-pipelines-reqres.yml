@@ -11,12 +11,12 @@ resources:
 variables:
 - group: common-value
 - name: containerRegistryDockerConnection
-  value: a071089
+  value: a071089  # ← 실제 Azure DevOps 서비스 연결 이름 (소문자 정확히 일치)
 - name: containerRegistry
-  value: a071089.azurecr.io
- # containerRegistry: 'event.azurecr.io'
- # containerRegistryDockerConnection: 'acr'
- # environment: 'aks.default'
+  value: 'a071089.azurecr.io'  # ← ACR의 로그인 서버 주소 (Azure Portal에서 확인 가능)
+  # containerRegistry: 'event.azurecr.io'
+  # containerRegistryDockerConnection: 'acr'
+  # environment: 'aks.default'
 - name: imageRepository
   value: 'products'
 - name: dockerfilePath
