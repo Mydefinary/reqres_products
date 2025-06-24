@@ -10,9 +10,13 @@ resources:
 
 variables:
 - group: common-value
-  # containerRegistry: 'event.azurecr.io'
-  # containerRegistryDockerConnection: 'acr'
-  # environment: 'aks.default'
+- name: containerRegistryDockerConnection
+  value: a071089
+- name: containerRegistry
+  value: a071089.azurecr.io
+ # containerRegistry: 'event.azurecr.io'
+ # containerRegistryDockerConnection: 'acr'
+ # environment: 'aks.default'
 - name: imageRepository
   value: 'products'
 - name: dockerfilePath
